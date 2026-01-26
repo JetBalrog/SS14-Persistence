@@ -72,3 +72,16 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
+
+- type: construction
+  id: ClosetWallSecure
+  graph: ClosetWallSecure
+  startNode: start
+  targetNode: closetwallsecure
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
