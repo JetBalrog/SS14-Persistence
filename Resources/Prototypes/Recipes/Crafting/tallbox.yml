@@ -43,3 +43,11 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
+
+- type: construction
+  id: SuitStorageUnit
+  graph: SuitStorageUnit
+  startNode: start
+  targetNode: suitstorage
+  category: construction-category-storage
+  objectType: Structure
