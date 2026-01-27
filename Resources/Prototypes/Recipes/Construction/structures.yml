@@ -1528,3 +1528,11 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
+
+- type: construction
+  id: StationBeacon
+  graph: StationBeacon
+  startNode: start
+  targetNode: stationbeacon
+  category: construction-category-storage
+  objectType: Structure
