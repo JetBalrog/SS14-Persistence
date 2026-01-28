@@ -168,6 +168,7 @@
   - ClothingUniformJumpsuitEngineeringHazard
   - ClothingUniformJumpsuitSeniorEngineer
   - ClothingUniformJumpskirtSeniorEngineer
+  - ClothingShoesBootsWork
 
 - type: latheRecipePack
   id: ClothingMedical

@@ -1909,3 +1909,8 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformGenericTacticalTurtleNeck
   result: ClothingUniformGenericTacticalTurtleNeck
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipe
+  id: ClothingShoesBootsWork
+  result: ClothingShoesBootsWork
