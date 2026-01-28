@@ -45,6 +45,25 @@
   - ClothingUniformJumpskirtPurpleElegantDress
   - ClothingUniformJumpskirtRedElegantDress
   - ClothingUniformJumpskirtRedStripedDress
+  - ClothingShoesBootsPerformer
+  - ClothingShoesBootsLaceup
+  - ClothingShoesFlippers
+  - ClothingShoesLeather
+  - ClothingShoesSlippers
+  - ClothingShoeSlippersDuck
+  - ClothingShoesTourist
+  - ClothingShoesDameDane
+  - ClothingShoesCult
+  - ClothingShoesSwat # SWAT
+  - ClothingShoesColorBlack
+  - ClothingShoesColorWhite
+  - ClothingShoesColorBlue
+  - ClothingShoesColorBrown
+  - ClothingShoesColorGreen
+  - ClothingShoesColorOrange
+  - ClothingShoesColorRed
+  - ClothingShoesColorYellow
+  - ClothingShoesColorPurple
 
 - type: latheRecipePack
   id: ClothingAssortedOversuits
@@ -134,6 +153,7 @@
   - ClothingUniformJumpsuitQMTurtleneck
   - ClothingUniformJumpskirtQMTurtleneck
   - ClothingUniformJumpsuitQMFormal
+  - ClothingShoesBootsSalvage
 
 - type: latheRecipePack
   id: ClothingCommand
@@ -294,6 +314,9 @@
   - ClothingUniformJumpsuitMime
   - ClothingUniformJumpskirtMime
   - ClothingUniformJumpsuitMusician
+  - ClothingShoesChef
+  - ClothingShoesClown
+  - ClothingShoesJester
 
 - type: latheRecipePack
   id: WinterCoats
@@ -337,6 +360,10 @@
   - ClothingOuterWinterColorYellow
   - ClothingOuterHoodieBlack
   - ClothingOuterHoodieGrey
+  - ClothingShoesBootsWinter
+  - ClothingShoesBootsWinterEngi
+  - ClothingShoesBootsWinterMed
+  - ClothingShoesBootsWinterSci
 
 - type: latheRecipePack
   id: Ties

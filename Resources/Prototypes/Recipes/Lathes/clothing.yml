@@ -1924,3 +1924,138 @@
   id: ClothingShoesBootsWork
   result: ClothingShoesBootsWork
 
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsSalvage
+  result: ClothingShoesBootsSalvage
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsPerformer
+  result: ClothingShoesBootsPerformer
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsLaceup
+  result: ClothingShoesBootsLaceup
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsWinter
+  result: ClothingShoesBootsWinter
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsWinterEngi
+  result: ClothingShoesBootsWinterEngi
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsWinterMed
+  result: ClothingShoesBootsWinterMed
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesBootsWinterSci
+  result: ClothingShoesBootsWinterSci
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesFlippers
+  result: ClothingShoesFlippers
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesLeather
+  result: ClothingShoesLeather
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesSlippers
+  result: ClothingShoesSlippers
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoeSlippersDuck
+  result: ClothingShoeSlippersDuck
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesTourist
+  result: ClothingShoesTourist
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesDameDane
+  result: ClothingShoesDameDane
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesChef
+  result: ClothingShoesChef
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesClown
+  result: ClothingShoesClown
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesCult
+  result: ClothingShoesCult
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesSwat
+  result: ClothingShoesSwat
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesJester
+  result: ClothingShoesJester
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorBlack
+  result: ClothingShoesColorBlack
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorWhite
+  result: ClothingShoesColorWhite
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorBlue
+  result: ClothingShoesColorBlue
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorBrown
+  result: ClothingShoesColorBrown
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorGreen
+  result: ClothingShoesColorGreen
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorOrange
+  result: ClothingShoesColorOrange
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorRed
+  result: ClothingShoesColorRed
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorYellow
+  result: ClothingShoesColorYellow
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesColorPurple
+  result: ClothingShoesColorPurple
+
