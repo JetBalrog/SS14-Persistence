@@ -1131,7 +1131,7 @@
   id: AirlockExternal
   graph: AirlockExternal
   startNode: start
-  targetNode: externalAirlock
+  targetNode: airlock
   category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
@@ -1143,7 +1143,7 @@
   id: AirlockExternalGlass
   graph: AirlockExternal
   startNode: start
-  targetNode: externalGlassAirlock
+  targetNode: glassAirlock
   category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
