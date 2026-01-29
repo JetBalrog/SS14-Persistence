@@ -2251,6 +2251,16 @@
 
 - type: latheRecipe
   parent: BaseBeltsClothingRecipe
+  id: OreBag
+  result: OreBag
+
+- type: latheRecipe
+  parent: BaseBeltsClothingRecipe
+  id: PlantBag
+  result: PlantBag
+
+- type: latheRecipe
+  parent: BaseBeltsClothingRecipe
   id: ClothingBeltUtility
   result: ClothingBeltUtility
 

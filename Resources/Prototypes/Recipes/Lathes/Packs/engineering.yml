@@ -26,6 +26,8 @@
   - ToolboxMechanical
   - VoiceSensorCopper
   - SignallerCopper
+  - OreBag
+  - PlantBag
 
 - type: latheRecipePack
   id: AtmosStatic
