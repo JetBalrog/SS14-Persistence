@@ -184,3 +184,7 @@
 - type: latheCategory
   id: Glasses
   name: lathe-category-glasses
+
+- type: latheCategory
+  id: Masks
+  name: lathe-category-masks

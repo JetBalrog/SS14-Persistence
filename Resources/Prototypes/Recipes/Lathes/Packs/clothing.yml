@@ -101,6 +101,37 @@
   - ClothingHandsGlovesBoxingBlue
   - ClothingHandsGlovesBoxingGreen
   - ClothingHandsGlovesBoxingYellow
+  - ClothingMaskRat
+  - ClothingMaskFox
+  - ClothingMaskBee
+  - ClothingMaskBear
+  - ClothingMaskRaven
+  - ClothingMaskJackal
+  - ClothingMaskBat
+  - ClothingMaskNeckGaiter
+  - ClothingMaskNeckGaiterRed
+  - ClothingMaskItalianMoustache
+  - ClothingNeckLGBTPin
+  - ClothingNeckAllyPin
+  - ClothingNeckAromanticPin
+  - ClothingNeckAroacePin
+  - ClothingNeckAsexualPin
+  - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
+  - ClothingNeckIntersexPin
+  - ClothingNeckLesbianPin
+  - ClothingNeckNonBinaryPin
+  - ClothingNeckPansexualPin
+  - ClothingNeckPluralPin
+  - ClothingNeckOmnisexualPin
+  - ClothingNeckGenderqueerPin
+  - ClothingNeckGenderfluidPin
+  - ClothingNeckTransPin
+  - ClothingNeckAutismPin
+  - ClothingNeckGoldAutismPin
+  - ClothingNeckBling
+  - ClothingNeckLawyerbadge
+
 
 - type: latheRecipePack
   id: ClothingAssortedOversuits
@@ -253,6 +284,7 @@
   - ClothingUniformJumpskirtParamedic
   - ClothingHeadHatParamedicsoft
   - ClothingBeltMedical
+  - ClothingNeckStethoscope
 
 - type: latheRecipePack
   id: ClothingScience
@@ -318,6 +350,7 @@
   - ClothingUniformJumpsuitSecCorpsmanBlue
   - ClothingUniformJumpsuitSecCorpsmanBlack
   - ClothingUniformJumpskirtTacticalMaid
+  - Dinkystar
 
 - type: latheRecipePack
   id: ClothingService
@@ -361,6 +394,17 @@
   - ClothingBeltJanitor
   - ClothingBeltPlant
   - ClothingBeltChef
+  - ClothingNeckStoleChaplain
+  - ClothingMaskClown
+  - ClothingMaskJoy
+  - ClothingMaskMime
+  - ClothingMaskPlague
+  - ClothingMaskBlushingClown
+  - ClothingMaskBlushingMime
+  - ClothingMaskSadMime
+  - ClothingMaskScaredMime
+  - ClothingNeckStoleChaplain
+  - SprayFlowerPin
 
 - type: latheRecipePack
   id: WinterCoats
@@ -440,6 +484,19 @@
   - ClothingNeckCloakCe
   - ClothingCloakCmo
   - ClothingNeckCloakHop
+  - ClothingNeckCloakTrans
+  - ClothingNeckCloakGoliathCloak
+  - ClothingNeckCloakMoth
+  - ClothingNeckCloakVoid
+  - ClothingNeckCloakAce
+  - ClothingNeckCloakAro
+  - ClothingNeckCloakAroace
+  - ClothingNeckCloakBi
+  - ClothingNeckCloakIntersex
+  - ClothingNeckCloakLesbian
+  - ClothingNeckCloakGay
+  - ClothingNeckCloakEnby
+  - ClothingNeckCloakPan
 
 - type: latheRecipePack
   id: Mantles
