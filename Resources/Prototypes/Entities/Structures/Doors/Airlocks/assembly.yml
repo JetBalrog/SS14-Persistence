@@ -376,8 +376,12 @@
 - type: entity
   parent: AirlockAssembly
   id: AirlockAssemblyHighSec
+  name: vault door assembly
   suffix: HighSec
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/highsec/highsec.rsi
     state: "assembly"
+  - type: Construction
+    graph: VaultDoor
+    node: assembly

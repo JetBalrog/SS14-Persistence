@@ -1205,6 +1205,20 @@
     - !type:TileNotBlocked
 
 - type: construction
+  id: VaultDoor
+  name: construction-recipe-airlock-vault
+  graph: VaultDoor
+  startNode: start
+  targetNode: complete_vault_door
+  category: construction-category-structures
+  #  state: assembly
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   id: Windoor
   graph: Windoor
   startNode: start
@@ -1552,3 +1566,11 @@
   canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
+
+- type: construction
+  id: StationBeacon
+  graph: StationBeacon
+  startNode: start
+  targetNode: stationbeacon
+  category: construction-category-storage
+  objectType: Structure
