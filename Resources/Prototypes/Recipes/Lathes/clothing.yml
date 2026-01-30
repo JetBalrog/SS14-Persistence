@@ -2185,6 +2185,25 @@
   result: ClothingHandsGlovesJanitor
 
 - type: latheRecipe
+  parent: BaseGlovesClothingRecipeInsulated
+  id: ClothingHandsGlovesColorYellow
+  result: ClothingHandsGlovesColorYellow
+  unlockUses: 4
+
+- type: latheRecipe
+  parent: BaseGlovesClothingRecipeInsulated
+  id: ClothingHandsGlovesCaptain
+  result: ClothingHandsGlovesCaptain
+  materials:
+    Durathread: 500
+    Gold: 200
+    Plasteel: 200
+    Diamond: 200
+    Titanium: 500
+    Phoron: 200
+  unlockUses: 1
+# Persi14 jumpsuits
+- type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtJanimaid
   result: ClothingUniformJumpskirtJanimaid
@@ -2198,12 +2217,12 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtTacticalMaid
   result: ClothingUniformJumpskirtTacticalMaid
-
+# Persi14 coats
 - type: latheRecipe
   parent: BaseCoatRecipe
   id: ClothingOuterVestHazard
   result: ClothingOuterVestHazard
-
+# Persi14 belts
 - type: latheRecipe
   parent: BaseCoatRecipe
   id: ClothingOuterVest
@@ -2213,7 +2232,6 @@
   parent: BaseBeltsClothingRecipe
   id: ClothingBeltChampion
   result: ClothingBeltChampion
-  components:
   materials:
     Cloth: 500
     Durathread: 200
@@ -2263,7 +2281,7 @@
   parent: BaseBeltsClothingRecipe
   id: ClothingBeltUtility
   result: ClothingBeltUtility
-
+# Persi14 glasses
 - type: latheRecipe
   parent: BaseGlassesClothingRecipe
   id: ClothingEyesGlasses
@@ -2304,3 +2322,14 @@
   id: ClothingEyesGlassesCheapSunglasses
   result: ClothingEyesGlassesCheapSunglasses
 
+- type: latheRecipe
+  parent: BaseGlassesClothingRecipe
+  id: ClothingEyesGlassesSunglasses
+  result: ClothingEyesGlassesSunglasses
+  unlockUses: 4
+
+- type: latheRecipe
+  parent: BaseGlassesClothingRecipe
+  id: ClothingEyesGlassesMeson
+  result: ClothingEyesGlassesMeson
+  unlockUses: 4

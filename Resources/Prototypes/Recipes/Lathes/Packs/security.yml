@@ -17,6 +17,14 @@
   - ClothingHeadHelmetRiot
   - ClothingHeadHelmetBasic
   - ClothingMaskGasSecurity
+  - ClothingEyesGlassesSecurity
+  - ClothingEyesGlassesMercenary
+  - ClothingBeltSecurity
+  - ClothingBeltHolster
+  - ClothingBeltBandolier
+  - ClothingBeltSecurityWebbing
+  - ClothingBeltMercWebbing
+  - ClothingBeltMilitaryWebbing
 
 # Practice ammo/mags and practice weapons
 - type: latheRecipePack
@@ -80,6 +88,9 @@
   - PowerCageSmall
   - TelescopicShield
   - ClothingBackpackHarmpack
+  - ClothingHandsMercGlovesCombat
+  - ClothingHandsTacticalMaidGloves
+  - ClothingHandsGlovesCombat
 
 - type: latheRecipePack
   id: SecurityBoards
