@@ -97,6 +97,10 @@
   - ClothingEyesGlassesJamjar
   - ClothingEyesGlassesOutlawGlasses
   - ClothingEyesGlassesCheapSunglasses
+  - ClothingHandsGlovesBoxingRed
+  - ClothingHandsGlovesBoxingBlue
+  - ClothingHandsGlovesBoxingGreen
+  - ClothingHandsGlovesBoxingYellow
 
 - type: latheRecipePack
   id: ClothingAssortedOversuits
