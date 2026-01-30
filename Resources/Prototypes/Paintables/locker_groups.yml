@@ -21,6 +21,14 @@
     mime: LockerMime
     medicine: LockerMedicine
     paramedic: LockerParamedic
+    prisoner1: LockerPrisoner
+    prisoner2: LockerPrisoner2
+    prisoner3: LockerPrisoner3
+    prisoner4: LockerPrisoner4
+    prisoner5: LockerPrisoner5
+    prisoner6: LockerPrisoner6
+    prisoner7: LockerPrisoner7
+    prisoner8: LockerPrisoner8
     quartermaster: LockerQuarterMaster
     rd: LockerResearchDirector
     representative: LockerRepresentative
