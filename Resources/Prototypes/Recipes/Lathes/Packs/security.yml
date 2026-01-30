@@ -25,6 +25,15 @@
   - ClothingBeltSecurityWebbing
   - ClothingBeltMercWebbing
   - ClothingBeltMilitaryWebbing
+  - ClothingShoesBootsJack
+  - ClothingShoesBootsCombat
+  - ClothingShoesHighheelBoots 
+  - ClothingShoesBootsMerc 
+  - ClothingShoesBootsWinterSec
+  - ClothingShoesBootsCowboyBrown 
+  - ClothingShoesBootsCowboyBlack 
+  - ClothingShoesBootsCowboyWhite 
+  - ClothingShoesBootsCowboyFancy 
 
 # Practice ammo/mags and practice weapons
 - type: latheRecipePack

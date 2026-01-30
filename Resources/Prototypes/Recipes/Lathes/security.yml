@@ -49,14 +49,14 @@
 
 - type: latheRecipe
   abstract: true
-  id: BaseGlovesClothingRecipeInsulated
+  id: BaseShoesClothingRecipeSecurity
   categories:
-  - Gloves
+  - Shoes
   completetime: 2
   materials:
     Cloth: 200
     Durathread: 200
-    Plasteel: 100
+    Plasteel: 200
 
 ## Recipes
 
@@ -454,3 +454,49 @@
   materials:
     Steel: 100
     ReinforcedGlass: 200
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsJack
+  result: ClothingShoesBootsJack
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsCombat
+  result: ClothingShoesBootsCombat
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesHighheelBoots
+  result: ClothingShoesHighheelBoots
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsMerc
+  result: ClothingShoesBootsMerc
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsWinterSec
+  result: ClothingShoesBootsWinterSec
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsCowboyBrown
+  result: ClothingShoesBootsCowboyBrown
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsCowboyBlack
+  result: ClothingShoesBootsCowboyBlack
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsCowboyWhite
+  result: ClothingShoesBootsCowboyWhite
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeSecurity
+  id: ClothingShoesBootsCowboyFancy
+  result: ClothingShoesBootsCowboyFancy
+

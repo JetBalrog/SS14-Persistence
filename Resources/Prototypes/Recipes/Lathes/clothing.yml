@@ -99,6 +99,17 @@
 
 - type: latheRecipe
   abstract: true
+  id: BaseGlovesClothingRecipeInsulated
+  categories:
+  - Gloves
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 200
+    Plasteel: 100
+
+- type: latheRecipe
+  abstract: true
   id: BaseBeltsClothingRecipe
   categories:
   - Belts
@@ -2088,6 +2099,14 @@
   parent: BaseShoesClothingRecipeCheap
   id: ClothingShoesColorPurple
   result: ClothingShoesColorPurple
+
+- type: latheRecipe
+  parent: BaseShoesClothingRecipeCheap
+  id: ClothingShoesSkates
+  result: ClothingShoesSkates
+  materials:
+    Steel: 1000
+    Cloth: 800
 # Persi14 Gloves
 - type: latheRecipe
   parent: BaseGlovesClothingRecipeCheap
