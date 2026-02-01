@@ -447,6 +447,12 @@
           enum.GeneratorVisualLayers.Body:
             True: { state: portgen2on }
             False: { state: portgen2 }
+              - type: NodeContainer
+                examinable: true
+                nodes:
+                  output:
+                    !type:CableDeviceNode
+                    nodeGroupID: HVPower
           enum.GeneratorVisualLayers.Unlit:
             True: { visible: true }
             False: { visible: false }
