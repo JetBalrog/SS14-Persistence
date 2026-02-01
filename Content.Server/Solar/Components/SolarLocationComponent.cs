@@ -1,4 +1,5 @@
 using Content.Server.Solar.EntitySystems;
+using Content.Server.StationEvents.Events;
 
 namespace Content.Server.Solar.Components
 {
@@ -7,6 +8,13 @@ namespace Content.Server.Solar.Components
     [Access(typeof(SolarPositioningSystem))]
     public sealed partial class SolarLocationComponent : Component
     {
+        /// <summary>
+        /// This is set to true when the SolarLocationComponent's angle & vel
+        /// are randomized, and is used to prevent resetting these when loading a save
+        /// </summary>
+        [DataField]
+        public bool WasInitialized = false;
+
         /// <summary>
         /// The current sun angle.
         /// </summary>
