@@ -3,11 +3,14 @@ using Content.Server.Roles;
 using Content.Server.Roles.Jobs;
 using Content.Server._NF.Bank;
 using Content.Server.CrewAssignments.Systems;
+using Content.Shared.CCVar;
 using Content.Shared.CharacterInfo;
 using Content.Shared.DetailExaminable;
 using Content.Shared.Objectives;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Objectives.Systems;
+using Robust.Shared.Configuration;
+using Robust.Shared.Utility;
 
 namespace Content.Server.CharacterInfo;
 
@@ -19,6 +22,7 @@ public sealed class CharacterInfoSystem : EntitySystem
     [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
     [Dependency] private readonly BankSystem _bank = default!;
     [Dependency] private readonly JobNetSystem _jobNet = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     public override void Initialize()
     {
@@ -89,8 +93,29 @@ public sealed class CharacterInfoSystem : EntitySystem
         if (args.SenderSession.AttachedEntity is not { } entity)
             return;
 
+        string newContent = "";
+        var maxFlavorTextLength = _cfg.GetCVar(CCVars.MaxFlavorTextLength);
+        if (msg.Content.Length > maxFlavorTextLength)
+        {
+            newContent = FormattedMessage.RemoveMarkupOrThrow(msg.Content)[..maxFlavorTextLength];
+        }
+        else
+        {
+            newContent = FormattedMessage.RemoveMarkupOrThrow(msg.Content);
+        }
+
         var detail = EnsureComp<DetailExaminableComponent>(entity);
-        detail.Content = msg.Content;
+        detail.Content = newContent;
         Dirty(entity, detail);
     }
+
+//     var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
+//         if (FlavorText.Length > maxFlavorTextLength)
+//     {
+//         flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength];
+//     }
+// else
+// {
+//     flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText);
+// }
 }
