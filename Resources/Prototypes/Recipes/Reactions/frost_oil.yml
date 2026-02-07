@@ -163,9 +163,7 @@
   priority: 1
   quantized: true
   reactants:
-    Silicon:
-      amount: 10
-    Plasma:
+    Bananium:
       amount: 10
     FrostOil:
       amount: 5
