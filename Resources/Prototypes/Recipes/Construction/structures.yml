@@ -121,7 +121,7 @@
 - type: construction
   id: DiagonalMiningWall
   graph: GirderDiagonal
-  name: mining wall (diagonal)
+  name: construction-recipe-diagonal-mining-wall
   startNode: start
   targetNode: miningWallDiagonal
   category: construction-category-structures
@@ -464,7 +464,7 @@
 
 - type: construction
   id: MiningWindowDiagonal
-  name: mining window (diagonal)
+  name: construction-recipe-mining-window-diagonal
   graph: WindowDiagonal
   startNode: start
   targetNode: miningWindowDiagonal
@@ -1235,7 +1235,7 @@
 - type: construction
   id: AirlockMining
   graph: AirlockMining
-  name: mining airlock
+  name: construction-recipe-mining-airlock
   startNode: start
   targetNode: airlock
   category: construction-category-structures
@@ -1248,7 +1248,7 @@
 - type: construction
   id: AirlockMiningGlass
   graph: AirlockMining
-  name: glass mining airlock
+  name: construction-recipe-glass-mining-airlock
   startNode: start
   targetNode: glassAirlock
   category: construction-category-structures
