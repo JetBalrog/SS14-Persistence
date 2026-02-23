@@ -175,7 +175,7 @@ namespace Content.Server.GameTicking
             // Can't spawn players with a dummy ticker!
             if (DummyTicker)
                 return;
-            var silent = true;
+            var silent = false;
             var lateJoin = true;
             HumanoidCharacterProfile? character = GetPlayerProfile(player);
             EntityUid station;
