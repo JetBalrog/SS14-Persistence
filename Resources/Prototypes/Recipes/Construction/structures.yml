@@ -1574,6 +1574,30 @@
     - !type:TileNotBlocked
 
 - type: construction
+  id: StatueVenusRed
+  graph: StatueVenusRed
+  startNode: start
+  targetNode: venusstatueRed
+  category: construction-category-structures
+  placementMode: SnapgridCenter
+  objectType: Structure
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: StatueVenusBlue
+  graph: StatueVenusBlue
+  startNode: start
+  targetNode: venusstatueBlue
+  category: construction-category-structures
+  placementMode: SnapgridCenter
+  objectType: Structure
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   id: BananiumDoor
   graph: DoorGraph
   startNode: start

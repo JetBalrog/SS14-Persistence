@@ -86,3 +86,78 @@
       steps:
       - tool: Prying
         doAfter: 5
+
+- type: constructionGraph
+  id: StatueVenusRed
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: venusstatueRed
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 8
+              doAfter: 10
+            - tag: Toolbox
+              name: construction-graph-tag-toolbox
+              store: toolbox
+              doAfter: 1
+              icon:
+                sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+                state: icon
+
+    - node: venusstatueRed
+      entity: StatueVenusRed
+      edges:
+        - to: start
+          completed:
+          - !type:SpawnPrototype
+                prototype: SheetSteel1
+                amount: 8
+          - !type:DeleteEntity {}
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+            - tool: Welding
+              doAfter: 5
+
+- type: constructionGraph
+  id: StatueVenusBlue
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: venusstatueBlue
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 8
+              doAfter: 10
+            - tag: Toolbox
+              name: construction-graph-tag-toolbox
+              store: toolbox
+              doAfter: 1
+              icon:
+                sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+                state: icon
+
+    - node: venusstatueBlue
+      entity: StatueVenusBlue
+      edges:
+        - to: start
+          completed:
+          - !type:SpawnPrototype
+                prototype: SheetSteel1
+                amount: 8
+          - !type:EmptyAllContainers
+          - !type:DeleteEntity {}
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+            - tool: Welding
+              doAfter: 5
