@@ -161,3 +161,50 @@
               doAfter: 5
             - tool: Welding
               doAfter: 5
+
+- type: constructionGraph
+  id: Fireplace
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: fireplaceUnfinished
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 8
+              doAfter: 5
+            - material: WoodPlank
+              amount: 4
+              doAfter: 5
+
+    - node: fireplaceUnfinished
+      entity: FireplaceUnfinished
+      edges:
+        - to: fireplaceComplete
+          steps:
+            - tool: Welding
+              doAfter: 0.5
+        - to: start
+          completed:
+          - !type:SpawnPrototype
+                prototype: SheetSteel1
+                amount: 8
+          - !type:SpawnPrototype
+                prototype: MaterialWoodPlank1
+                amount: 4
+          - !type:EmptyAllContainers
+          - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: fireplaceComplete
+      entity: Fireplace
+      edges:
+        - to: fireplaceUnfinished
+          steps:
+            - tool: Prying
+              doAfter: 4
