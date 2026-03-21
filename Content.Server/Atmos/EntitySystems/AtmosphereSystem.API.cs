@@ -560,11 +560,14 @@ public partial class AtmosphereSystem
         if (!_atmosQuery.Resolve(grid, ref grid.Comp, false))
             return false;
 
-        if (!grid.Comp.AtmosDevices.Add(device))
-            return false;
+        //Add device or check if it is already there
+        if (grid.Comp.AtmosDevices.Add(device) || grid.Comp.AtmosDevices.Contains(device))
+        {
+            device.Comp.JoinedGrid = grid;
+            return true;
+        }
 
-        device.Comp.JoinedGrid = grid;
-        return true;
+        return false; //We could neither add the device, nor was it already in the list
     }
 
     /// <summary>

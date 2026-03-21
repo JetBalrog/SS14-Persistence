@@ -68,6 +68,8 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
+    - ClothingEyesGlassesSunglasses
+    - ClothingEyesGlassesCommand
 
 - type: technology
   id: MeatManipulation

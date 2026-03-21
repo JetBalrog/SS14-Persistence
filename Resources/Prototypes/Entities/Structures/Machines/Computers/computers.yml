@@ -123,6 +123,8 @@
   - type: ShuttleConsole
   - type: ActivatableUI
     key: enum.ShuttleConsoleUiKey.Key
+  - type: ActivatableUIRequiresAccess
+  - type: AccessReader
   - type: UserInterface
     interfaces:
         enum.ShuttleConsoleUiKey.Key:
@@ -131,7 +133,7 @@
           type: WiresBoundUserInterface
   - type: RadarConsole
   - type: WorldLoader
-    radius: 256
+    radius: 512
   - type: PointLight
     radius: 1.5
     energy: 4.0
@@ -199,7 +201,7 @@
     tags:
       - Syndicate
   - type: RadarConsole
-    maxRange: 384
+    maxRange: 768
   - type: WorldLoader
     radius: 1536
   - type: PointLight
@@ -231,7 +233,7 @@
     components:
       - type: CargoShuttle
   - type: RadarConsole
-    maxRange: 256
+    maxRange: 512
   - type: PointLight
     radius: 1.5
     energy: 4.0
@@ -841,7 +843,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: RadarConsole
-    maxRange: 512
+    maxRange: 1024
   - type: ActivatableUI
     key: enum.RadarConsoleUiKey.Key
   - type: UserInterface
@@ -1047,7 +1049,6 @@
     energy: 4.0
     color: "#b89f25"
   - type: AccessReader
-    access: [["Cargo"]]
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice

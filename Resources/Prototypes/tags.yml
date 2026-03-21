@@ -805,6 +805,12 @@
   id: Ice # CreateEntityTileReaction whitelist on Fresium
 
 - type: Tag
+  id: IFFShip # IFF sort tag for ships.
+
+- type: Tag
+  id: IFFStation # IFF sort tag for stations.
+
+- type: Tag
   id: Igniter # ConstructionGraph: makeshiftstunprod, FireBomb. Common ingredient in machines (HyperConvection)
 
 - type: Tag
@@ -1051,6 +1057,12 @@
 
 - type: Tag
   id: OreUranium # CargoBounty: BountySalvageOreUranium
+
+- type: Tag
+  id: OreBox # DumpWhitelist target: OreBag
+
+- type: Tag
+  id: OreProcessor # DumpWhitelist target: OreBag
 
 ## P ##
 
@@ -1713,3 +1725,6 @@
 
 - type: Tag
   id: XenoMeat
+  
+- type: Tag
+  id: EggSpider
