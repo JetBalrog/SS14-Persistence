@@ -30,6 +30,7 @@ namespace Content.Client.Access.UI
         private int _maxNameLength;
         private int _maxIdJobLength;
 
+        private AccessLevelControl _accessButtons = new();
         private readonly List<string> _jobPrototypeIds = new();
 
         private string? _lastFullName;
@@ -48,11 +49,8 @@ namespace Content.Client.Access.UI
 
             _owner = owner;
 
-            _maxNameLength = _cfgManager.GetCVar(CCVars.MaxNameLength);
-            _maxIdJobLength = _cfgManager.GetCVar(CCVars.MaxIdJobLength);
-
             FullNameLineEdit.OnTextEntered += _ => SubmitData();
-            FullNameLineEdit.IsValid = s => s.Length <= _maxNameLength;
+            FullNameLineEdit.IsValid = s => s.Length <= _cfgManager.GetCVar(CCVars.MaxNameLength);
             FullNameLineEdit.OnTextChanged += _ =>
             {
                 FullNameSaveButton.Disabled = FullNameSaveButton.Text == _lastFullName;
@@ -138,7 +136,7 @@ namespace Content.Client.Access.UI
             AccessLevelControlContainer.RemoveAllChildren();
             if (state.AllAssignments != null)
             {
-                
+
                 foreach (var item in state.AllAssignments)
                 {
                     var id = item.Key;

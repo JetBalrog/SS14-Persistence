@@ -137,12 +137,12 @@ public sealed partial class IFFConsoleWindow : FancyWindow,
 
     public void UpdateState(IFFConsoleBoundUserInterfaceState state)
     {
-        if ((state.AllowedFlags & IFFFlags.HideLabel) != 0x0)
+        if ((state.AllowedFlags & IFFFlags.HideLabel) != 0x0 || (state.AllowedFlags & IFFFlags.Hide) != 0x0)
         {
             ShowIFFOffButton.Disabled = false;
             ShowIFFOnButton.Disabled = false;
 
-            if ((state.Flags & IFFFlags.HideLabel) != 0x0)
+            if ((state.Flags & IFFFlags.HideLabel) != 0x0 || (state.Flags & IFFFlags.Hide) != 0x0)
             {
                 ShowIFFOffButton.Pressed = true;
             }
