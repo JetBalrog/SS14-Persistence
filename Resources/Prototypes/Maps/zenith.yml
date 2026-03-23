@@ -1,0 +1,21 @@
+- type: gameMap
+  id: Zenith
+  mapName: 'Zenith'
+  mapPath: /Maps/zenith.yml
+  minPlayers: 0
+  maxPlayers: 20
+  stations:
+    Zenith:
+      stationProto: StandardPersistStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Zenith {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SL'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationJobs
+          availableJobs: # 15 jobs total w/o latejoins, 19 jobs total w/ latejoins
+            #civilian (1+)
+            Passenger: [ -1, -1 ] #infinite, not counted
