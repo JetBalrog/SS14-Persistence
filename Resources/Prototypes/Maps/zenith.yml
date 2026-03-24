@@ -3,16 +3,16 @@
   mapName: 'Zenith'
   mapPath: /Maps/zenith.yml
   minPlayers: 0
-  maxPlayers: 20
+  maxPlayers: 7
   stations:
-    Zenith:
-      stationProto: StandardPersistStation
+    Persi-Station:
+      stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Zenith {1}'
+          mapNameTemplate: '{0} Persi-Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'SL'
+            prefixCreator: 'SC'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs
