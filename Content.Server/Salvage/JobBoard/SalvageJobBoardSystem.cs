@@ -173,7 +173,7 @@ public sealed class SalvageJobBoardSystem : EntitySystem
         {
             _cargo.UpdateBankAccount(
                 (ent.Owner, stationBankAccount),
-                jobProto.Reward,
+                (int)jobProto.Reward,
                 _cargo.CreateAccountDistribution((ent, stationBankAccount)));
         }
 
