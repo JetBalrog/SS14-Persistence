@@ -2,6 +2,7 @@ using Content.Shared.Atmos.Prototypes;
 using Content.Shared.Atmos.Reactions;
 using Content.Shared.CCVar;
 using JetBrains.Annotations;
+using Robust.Shared.Maths;
 using System.Runtime.CompilerServices;
 
 namespace Content.Shared.Atmos.EntitySystems;
@@ -104,6 +105,49 @@ public abstract partial class SharedAtmosphereSystem
     public void GetFlammableMoles(GasMixture mixture, float[] buffer)
     {
         NumericsHelpers.Multiply(mixture.Moles, GasOxidiserFuelMask, buffer);
+    }
+
+    /// <summary>
+    /// Computes the blended fire color for a gas mixture based on the proportional
+    /// moles of each reactive gas present (fuels and oxidizers with burn colors).
+    /// Each gas contributes its <see cref="GasPrototype.BurnColor"/> weighted by mole fraction.
+    /// </summary>
+    /// <param name="mixture">The <see cref="GasMixture"/> to compute fire color for.</param>
+    /// <returns>A blended <see cref="Color"/> representing the combined burn colors.</returns>
+    [PublicAPI]
+    public Color GetFuelBurnColor(GasMixture mixture)
+    {
+        var defaultColor = Color.FromHex("#FFB733");
+        var totalMoles = 0f;
+        var r = 0f;
+        var g = 0f;
+        var b = 0f;
+
+        for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
+        {
+            // Include fuels and oxidizers that have a non-default burn color.
+            if (GasFuelMask[i] == 0 && GasOxidizerMask[i] == 0)
+                continue;
+
+            var moles = mixture.GetMoles(i);
+            if (moles <= Atmospherics.Epsilon)
+                continue;
+
+            var burnColor = GasPrototypes[i].BurnColor;
+            // Skip gases still using the default color — they shouldn't tint the fire.
+            if (burnColor == defaultColor)
+                continue;
+
+            totalMoles += moles;
+            r += burnColor.R * moles;
+            g += burnColor.G * moles;
+            b += burnColor.B * moles;
+        }
+
+        if (totalMoles <= Atmospherics.Epsilon)
+            return defaultColor;
+
+        return new Color(r / totalMoles, g / totalMoles, b / totalMoles);
     }
 
     /// <summary>
