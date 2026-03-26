@@ -116,7 +116,7 @@
   reagent: Hydrogen
   pricePerMole: 0.5
   isFuel: true
-  burnColor: "#6699FF"
+  burnColor: "#A1E6FF"
 
 - type: gas
   id: Chlorine
