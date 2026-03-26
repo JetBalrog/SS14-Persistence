@@ -1976,3 +1976,74 @@
   category: construction-category-storage
   objectType: Structure
 
+- type: construction
+  id: Stairs
+  graph: StairsSteel
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairStage
+  graph: StairStage
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairWhite
+  graph: StairsWhite
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairStageWhite
+  graph: StairsWhiteStage
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairDark
+  graph: StairsDark
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairStageDark
+  graph: StairsDarkStage
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairWood
+  graph: StairsWood
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: StairStageWood
+  graph: StairsWoodStage
+  startNode: start
+  targetNode: done
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
