@@ -1981,7 +1981,7 @@
   graph: StairsSteel
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -1990,7 +1990,7 @@
   graph: StairStage
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -1999,7 +1999,7 @@
   graph: StairsWhite
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -2008,7 +2008,7 @@
   graph: StairsWhiteStage
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -2017,7 +2017,7 @@
   graph: StairsDark
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -2026,7 +2026,7 @@
   graph: StairsDarkStage
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -2035,7 +2035,7 @@
   graph: StairsWood
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
 
@@ -2044,6 +2044,30 @@
   graph: StairsWoodStage
   startNode: start
   targetNode: done
-  category: construction-category-storage
+  category: construction-category-structures
   objectType: Structure
   placementMode: SnapgridCenter
+
+- type: construction
+  id: Mirror
+  graph: MirrorGraph
+  startNode: start
+  targetNode: done
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  id: MirrorModern
+  graph: MirrorModernGraph
+  startNode: start
+  targetNode: done
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
