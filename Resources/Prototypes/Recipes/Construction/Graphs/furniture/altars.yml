@@ -390,7 +390,6 @@
           - !type:SpawnPrototype
                 prototype: Candle
                 amount: 1
-                doAfter: 1
           steps:
             - tool: Prying
               doAfter: 1
