@@ -264,6 +264,14 @@
   materials:
     Steel: 200
 
+- type: latheRecipe
+  id: CigaretteFilter
+  result: CigaretteFilter
+  completetime: 2
+  materials:
+    Paper: 20
+    Wood: 20
+
 # Bibles
 
 - type: latheRecipe
