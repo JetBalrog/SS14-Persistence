@@ -261,3 +261,12 @@
   completetime: 2
   materials:
     Cloth: 300
+
+- type: latheRecipe
+  parent: BaseLightRecipe
+  id: Floodlight
+  result: EmptyFloodlight
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 300
