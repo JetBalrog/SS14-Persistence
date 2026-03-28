@@ -233,29 +233,6 @@
     Aluminium: 30
 
 - type: latheRecipe
-  id: BoxFolderClipboardEmpty
-  result: BoxFolderClipboardEmpty
-  completetime: 2
-  materials:
-    Wood: 100
-    Steel: 50
-
-- type: latheRecipe
-  id: BoxFolderPlasticClipboardEmpty
-  result: BoxFolderPlasticClipboardEmpty
-  completetime: 2
-  materials:
-    Plastic: 100
-    Steel: 50
-
-- type: latheRecipe
-  id: BlankPaper
-  result: Paper
-  completetime: 2
-  materials:
-    Paper: 50
-
-- type: latheRecipe
   id: TowelColorWhite
   result: TowelColorWhite
   completetime: 2
