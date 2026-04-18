@@ -25,7 +25,15 @@
 - type: cargoBountyGroup
   id: CrimeBounty
   name: ???
-  
+
+- type: cargoBountyGroup
+  id: GasBounty
+  name: Gasses
+
+- type: cargoBountyGroup
+  id: ReagentBounty
+  name: Reagents
+
 - type: cargoBountyGroup
   id: SalvageJobTier1
   name: Salvage
