@@ -140,6 +140,7 @@
     - PowerCellsStatic
     - ElectronicsStatic
     - CassetteTape
+    - ReligionStatic
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -215,6 +216,7 @@
     - Instruments
     - Equipment
     - Hardsuits
+    - PaperworkDynamic
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo

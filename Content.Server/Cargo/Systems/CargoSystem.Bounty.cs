@@ -268,7 +268,7 @@ public sealed partial class CargoSystem
         if (!_protoMan.Resolve(bounty.Bounty, out var bountyPrototype))
             return;
 
-        if(bountyPrototype.BountyType == BountyType.PayOnComplete)
+        if (bountyPrototype.BountyType == BountyType.PayOnComplete)
         {
             if (!IsBountyComplete(container.Owner, bountyPrototype)) return;
             database.CheckedBounties.Add(component.Id);
@@ -286,10 +286,23 @@ public sealed partial class CargoSystem
             // determine valid bounty items and pay based on them
             var bountyEnts = GetValidBountyEntities(container.Owner, bountyPrototype.Entries);
             bountyEnts.Remove(container.Owner);
-            var toSell = Math.Min(max, bountyEnts.Count);
+            int totalSold = 0;
+            foreach (var ent in bountyEnts)
+            {
+                if(TryComp<StackComponent>(ent, out var stack))
+                {
+                    totalSold += stack.Count;
+                }
+                else
+                {
+                    totalSold++;
+                }
+            }
+            var toSell = Math.Min(max, totalSold);
+
             args.Price = toSell * bountyPrototype.Reward - _pricing.GetPrice(container.Owner);
         }
-        else if(bountyPrototype.BountyType == BountyType.PayPerReagent)
+        else if (bountyPrototype.BountyType == BountyType.PayPerReagent)
         {
             if (bountyPrototype.ReagentId == null) return;
             var max = bountyPrototype.Entries.FirstOrDefault().Amount - bounty.AmountCompleted;
@@ -371,7 +384,19 @@ public sealed partial class CargoSystem
                 var max = bountyProto.Entries.FirstOrDefault().Amount - bounty.AmountCompleted;
                 var bountyEnts = GetValidBountyEntities(sold, bountyProto.Entries);
                 bountyEnts.Remove(sold);
-                var toSell = Math.Min(max, bountyEnts.Count);
+                int totalSold = 0;
+                foreach (var ent in bountyEnts)
+                {
+                    if (TryComp<StackComponent>(ent, out var stack))
+                    {
+                        totalSold += stack.Count;
+                    }
+                    else
+                    {
+                        totalSold++;
+                    }
+                }
+                var toSell = Math.Min(max, totalSold);
                 if (toSell >= max)
                 {
                     CompleteBounty(station, bounty, args.Station);
@@ -398,10 +423,10 @@ public sealed partial class CargoSystem
                 else
                 {
                     var bountyCopy = bounty;
-                    bountyCopy.AmountCompleted += Math.Max(1,(int)toSell);
+                    bountyCopy.AmountCompleted += Math.Max(1, (int)toSell);
                 }
             }
-            else if(bountyProto.BountyType == BountyType.PayPerGas)
+            else if (bountyProto.BountyType == BountyType.PayPerGas)
             {
 
                 if (bountyProto.GasId == null) return;
@@ -569,7 +594,7 @@ public sealed partial class CargoSystem
     /// <returns>true if <paramref name="entity"/> is a valid item for the bounty entry, otherwise false</returns>
     public bool IsValidBountyEntry(EntityUid entity, CargoBountyItemEntry entry)
     {
-        if(entry.Whitelist == null)
+        if (entry.Whitelist == null)
         {
             return false;
         }
@@ -626,9 +651,9 @@ public sealed partial class CargoSystem
         {
             foreach (var entry in entries)
             {
-                if(IsValidBountyEntry(ent, entry))
+                if (IsValidBountyEntry(ent, entry))
                 {
-                    if(!final.Contains(ent))
+                    if (!final.Contains(ent))
                         final.Add(ent);
                 }
             }
@@ -648,7 +673,6 @@ public sealed partial class CargoSystem
 
         foreach (var container in containers.Containers.Values)
         {
-        //    if (container.ID != "entity_storage") continue;
             foreach (var ent in container.ContainedEntities)
             {
                 if (_bountyLabelQuery.HasComponent(ent))
