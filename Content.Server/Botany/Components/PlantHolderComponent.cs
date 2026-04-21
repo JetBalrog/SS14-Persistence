@@ -29,7 +29,7 @@ public sealed partial class PlantHolderComponent : Component
     /// Time between plant growth updates.
     /// </summary>
     [DataField]
-    public TimeSpan CycleDelay = TimeSpan.FromSeconds(15f);
+    public TimeSpan CycleDelay = TimeSpan.FromSeconds(60f);
 
     /// <summary>
     /// Game time when the plant last did a growth update.
