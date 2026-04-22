@@ -11,7 +11,7 @@
     amount: 250
 
 - type: cargoBounty
-  id: BountyPrecursorSpaceDrugs
+  id: BountyPrecursorHyperzine
   reward: 3
   reagentId: Stimulants
   group: PrecursorBounty
