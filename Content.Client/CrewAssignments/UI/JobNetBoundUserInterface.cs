@@ -1,4 +1,5 @@
 using Content.Client.CrewAssignments.UI;
+using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.Cargo.Components;
 using Content.Shared.CrewAssignments;
 using Content.Shared.CrewAssignments.Components;
@@ -53,7 +54,11 @@ public sealed class JobNetBoundUserInterface : BoundUserInterface
             SendMessage(new JobNetDealerLabelMessage(id));
         };
         CodexMenu = new();
-
+        _menu.PrecursorGuidebook.OnPressed += (ButtonEventArgs obj) =>
+        {
+            var guidebookController = _menu.UserInterfaceManager.GetUIController<GuidebookUIController>();
+            guidebookController.OpenGuidebook(selected: "Precursor");
+        };
     }
 
     private void HuntLEB_OnPressed(ButtonEventArgs obj)
