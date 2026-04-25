@@ -79,6 +79,8 @@
       Kidneys: OrganGoblinKidneys
   - type: HumanoidProfile
     species: Goblin
+  - type: ScaleVisuals
+    scale: 0.85, 0.8
 
 - type: entity
   parent:
@@ -87,6 +89,19 @@
   id: MobGoblin
   name: Urist McGoblin
   components:
+  - type: Thieving
+    stripTimeReduction: -4.5
+    stealthy: true
+  - type: Damageable
+    damageModifierSet: Goblin
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 3
   - type: Fixtures
     fixtures:
       fix1:
@@ -119,7 +134,7 @@
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Animal ]
+    metabolizerTypes: [ Goblin ]
 
 - type: entity
   parent: OrganGoblin
