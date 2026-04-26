@@ -166,9 +166,8 @@ public sealed partial class CargoSystem
                         }
 
                     }
-                    List<CargoBountyHistoryData> fakeHistory = new();
 
-                    _uiSystem.SetUiState(uid, CargoConsoleUiKey.Bounty, new CargoBountyConsoleState(sortedBounties, fakeHistory, untilNextSkip2, possibleTrades, component.SelectedTradeGrid, tax, exp, dexp, rexp, iLevelTitle, owner));
+                    _uiSystem.SetUiState(uid, CargoConsoleUiKey.Bounty, new CargoBountyConsoleState(sortedBounties, bountyDb.History, untilNextSkip2, possibleTrades, component.SelectedTradeGrid, tax, exp, dexp, rexp, iLevelTitle, owner));
                     return;
                 }
             }
