@@ -23,17 +23,6 @@
     amount: 2000
 
 - type: cargoBounty
-  id: BountyCocoaPowder
-  reward: 7.5
-  description: bounty-description-artifact
-  reagentId: CocoaPowder
-  group: ServiceBounty
-  bountyType: PayPerReagent
-  entries:
-  - name: bounty-item-cocoapowder
-    amount: 1300
-
-- type: cargoBounty
   id: BountyBread
   reward: 330
   description: bounty-description-bread
