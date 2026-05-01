@@ -71,17 +71,6 @@ public sealed partial class JobNetSystem : SharedJobNetSystem
         {
             component.PrecursorObjectives.Remove(objective);
             AwardPrecursor(component.Owner, component, proto.Reward);
-            if (_proto.TryIndex(component.RogueLevel, out var rogueLevel))
-            {
-                if (rogueLevel.Next != null && _proto.TryIndex(rogueLevel.Next, out var nextLevel))
-                {
-                    if (component.XP >= nextLevel.Cost)
-                    {
-                        component.RogueLevel = nextLevel.ID;
-                    }
-                }
-            }
-
             EntityUid? player = null;
             var comp = Transform(component.Owner);
             player = comp.ParentUid;
@@ -240,6 +229,16 @@ public sealed partial class JobNetSystem : SharedJobNetSystem
                 false,
                 actor.PlayerSession.Channel
                 );
+        }
+        if (_proto.TryIndex(component.RogueLevel, out var rogueLevel))
+        {
+            if (rogueLevel.Next != null && _proto.TryIndex(rogueLevel.Next, out var nextLevel))
+            {
+                if (component.XP >= nextLevel.Cost)
+                {
+                    component.RogueLevel = nextLevel.ID;
+                }
+            }
         }
     }
     private void OnSubmitHunted(Entity<JobNetComponent> ent, ref JobNetSubmitHuntedMessage args)
@@ -738,13 +737,13 @@ public sealed partial class JobNetSystem : SharedJobNetSystem
             {
                 var words = _codeword.GenerateCodewords("PersistenceCodewordGenerator");
                 comp.SecretPhrase = string.Join(" ", words);
-                comp.PrecursorResetTime = TimeSpan.FromMinutes(30);
+                comp.PrecursorResetTime = TimeSpan.FromMinutes(45);
                 TryAssignPrecursorObjective(uid, comp);
             }
             comp.RogueNetResetTime -= TimeSpan.FromSeconds(frameTime);
             if (comp.NetworkType != RogueNetworkType.None && comp.RogueNetResetTime <= TimeSpan.Zero)
             {
-                comp.RogueNetResetTime = TimeSpan.FromMinutes(120);
+                comp.RogueNetResetTime = TimeSpan.FromMinutes(180);
                 TryAssignRogueObjective(uid, comp);
             }
 

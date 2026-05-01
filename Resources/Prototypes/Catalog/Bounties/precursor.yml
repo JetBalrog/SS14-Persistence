@@ -1,23 +1,25 @@
 - type: cargoBounty
   id: BountyPrecursorSpaceDrugs
-  reward: 2
+  reward: 40
+  description: bounty-description-artifact
   reagentId: SpaceDrugs
   group: PrecursorBounty
   bountyType: PayPerReagent
-  successXP: -300
+  successXP: -200
   idPrefix: PREC-
   entries:
-  - name: Liquid Space Mirage (In Tank)
+  - name: bounty-item-liquid-space-mirage
     amount: 250
 
 - type: cargoBounty
-  id: BountyPrecursorHyperzine
-  reward: 3
-  reagentId: Stimulants
+  id: BountyPrecursorDesoxyephedrine
+  reward: 50
+  description: bounty-description-artifact
+  reagentId: Desoxyephedrine
   group: PrecursorBounty
   bountyType: PayPerReagent
-  successXP: -300
+  successXP: -200
   idPrefix: PREC-
   entries:
-  - name: Liquid Hyperzine (In Tank)
-    amount: 175
+  - name: bounty-item-liquid-desoxyephedrine
+    amount: 200
