@@ -7,13 +7,13 @@
   - FactionModification
 
 - type: guideEntry
-  id: guide-entry-faction-creation
-  name: FactionCreation
+  id: FactionCreation
+  name: guide-entry-faction-creation
   text: "/ServerInfo/Guidebook/Persistence/FactionCreation.xml"
 
 - type: guideEntry
-  id: guide-entry-faction-modification
-  name: FactionModification
+  id: FactionModification
+  name: guide-entry-faction-modification
   text: "/ServerInfo/Guidebook/Persistence/FactionModification.xml"
 
 
